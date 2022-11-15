@@ -108,6 +108,7 @@ body {
 .dots {
   height: 15px;
   width: 15px;
+  cursor: grab;
 }
 
 .clear-button {
@@ -122,6 +123,6 @@ body {
 }
 
 .clear-button:hover {
-  text-decoration: line-through;
+  text-decoration: line-through ;
   color: rgb(255, 10, 10);
 }
