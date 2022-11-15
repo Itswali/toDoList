@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.list-wrap {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.completed-list {
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.title-container {
+  display: grid;
+  grid-template-columns: 15fr 1fr;
+  column-gap: 5px;
+  border: 1px solid gainsboro;
+  width: 430px;
+}
+
+.list-title {
+  height: 20px;
+  font-weight: 300;
+  font-size: 15px;
+  margin: 0;
+  padding: 15px;
+}
+
+.refresh-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.refresh-icon {
+  height: 14px;
+  width: 14px;
+  padding-right: 5px;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: 15fr 1fr;
+  column-gap: 7px;
+  border: 1px solid rgb(204, 201, 201);
+  width: 430px;
+}
+
+.enter-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enter-icon {
+  height: 14px;
+  width: 14px;
+  padding-right: 6px;
+  cursor: pointer;
+}
+
+.list-input {
+  border: none;
+  height: 20px;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: #757575;
+}
+
+.checkbox {
+  cursor: pointer;
+}
+
+.element {
+  display: grid;
+  grid-template-columns: 1fr 15fr 1fr;
+  column-gap: 5px;
+  border: 0.5px solid rgb(212, 209, 209);
+  width: 405px;
+  height: 20px;
+  list-style: none;
+  font-weight: 300;
+  padding: 15px 10px 15px 15px;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.dots {
+  height: 15px;
+  width: 15px;
+  cursor: grab;
+}
+
+.clear-button {
+  width: 430px;
+  border: none;
+  height: 55px;
+  line-height: 30px;
+  font-weight: 200;
+  font-size: 15px;
+  cursor: pointer;
+  color: #aa2323;
+}
+
+.clear-button:hover {
+  text-decoration: line-through;
+  color: rgb(255, 10, 10);
+}
