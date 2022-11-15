@@ -22,7 +22,7 @@ const dots = new Image();
 dots.src = Dots;
 // Array with String Bool number.
 const tasks = [
-  { index: 0, description: 'Read for 30 Minutes', completed: false },
+  { index: 0, description: 'Read for 30 Minutes', completed: true },
   { index: 1, description: 'Exersisce for 30 Minutes', completed: false },
   { index: 2, description: 'Complete Today Projects', completed: false },
 ];
