@@ -17,7 +17,7 @@ const enter = new Image();
 enter.src = Enter;
 enterContainer.innerHTML = `<img src=${Enter} class="enter-icon" />`;
 
-const listContainer = document.querySelector('.list-list');
+const listContainer = document.querySelector('.list-container');
 const dots = new Image();
 dots.src = Dots;
 // Array with String Bool number.

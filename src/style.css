@@ -16,7 +16,7 @@ body {
   align-items: center;
 }
 
-.list-list {
+.list-container {
   display: flex;
   flex-direction: column;
   padding: 0;
