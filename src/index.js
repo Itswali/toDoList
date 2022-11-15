@@ -26,7 +26,7 @@ const tasks = [
   { index: 1, description: 'Exersisce for 30 Minutes', completed: false },
   { index: 2, description: 'Complete Today Projects', completed: false },
 ];
-// create New Task Array for new list 
+// create New Task Array for new list
 const createTask = (tasks) => {
   const taskContent = `
   <li class="element">
