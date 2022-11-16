@@ -108,8 +108,6 @@ class UI {
     buttonsDots.push(dotsContainer);
   }
 
-
-
   static deleteCompleted() {
     const liList = document.querySelectorAll('.element');
     liList.forEach((li) => {
@@ -133,9 +131,7 @@ class UI {
   static clearFields() {
     document.querySelector('#list-item').value = '';
   }
-
-
-
+  
   static removeTask(id) {
     const currentList = store.getList();
     const filteredList = currentList.filter((task) => task.id !== id);
@@ -147,9 +143,6 @@ class UI {
     UI.displayList();
   }
 }
-
-
-
 
 document.addEventListener('DOMContentLoaded', UI.displayList);
 const btnClear = document.querySelector('#btn-clear');
