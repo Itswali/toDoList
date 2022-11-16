@@ -70,7 +70,6 @@ function toggleLi(e) {
   image.setAttribute('class', 'bin');
 }
 
-// User Interface
 class UI {
   static displayList() {
     const list = store.getList();
