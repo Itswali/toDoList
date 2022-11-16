@@ -37,4 +37,24 @@ export default class Store {
     }
     localStorage.setItem('list', JSON.stringify(newList));
   }
+
+  static toggleDone(currentList, id, checked, input) {
+    const newList = [];
+    for (let i = 0; i < currentList.length; i += 1) {
+      const task = currentList[i];
+      if (task.id === id) {
+        if (checked === true) {
+          task.completed = true;
+          input.style.textDecoration = 'line-through';
+        }
+        if (checked === false) {
+          task.completed = false;
+          input.style.textDecoration = 'auto';
+        }
+      }
+      newList.push(task);
+    }
+
+    localStorage.setItem('list', JSON.stringify(newList));
+  }
 }
