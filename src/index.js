@@ -1,5 +1,3 @@
-// import _ from 'lodash';
-// Modules files od js functions
 import './style.css';
 import Store from './modules/Store.js';
 import Task from './modules/task.js';
@@ -52,7 +50,7 @@ function updateTask(e) {
 const inputTasks = [];
 const buttonsDots = [];
 
-function toggleLi(e) {
+function togLi(e) {
   let li;
   const { target } = e;
   const className = e.target.classList[0];
@@ -74,4 +72,96 @@ function toggleLi(e) {
   image.setAttribute('class', 'bin');
 }
 
-// User Interface  Section Coming Up
+// User Interface  
+class UI {
+
+  static displayList() {
+    const list = store.getList();
+    list.forEach((task) => UI.addTodoList(task));
+  }
+
+  static addTodoList(task) {
+    const tasksList = document.getElementById('list-container');
+
+    const taskContent = document.createElement('li');
+    taskContent.addEventListener('click', togLi);
+    taskContent.innerHTML = `
+        <input type="checkbox" id="checkbox" class="checkbox" />
+        <div><input value="${task.description}" class="task-input" id="task-input-${task.id}"/></div>
+        <div class="dots-container"><img type="task-btn" class="dots" src="${Dots}" id="btn-bin-${task.id}" /></div> `;
+
+    tasksList.appendChild(taskContent);
+    const taskInput = taskContent.querySelector('.task-input');
+    taskInput.addEventListener('keyup', updateTask);
+    inputTasks.push(taskInput);
+    taskContent.classList.add('element');
+    taskContent.setAttribute('id', `task-${task.id}`);
+    const dotsContainer = taskContent.querySelector('.dots-container');
+    dotsContainer.addEventListener('click', (e) => {
+      if (e.target.className === 'bin') {
+        const fullid = e.target.id;
+        const idString = fullid.split('-')[2];
+        const id = parseInt(idString, 10);
+        UI.removeTask(id);
+      }
+    });
+    buttonsDots.push(dotsContainer);
+  }
+
+
+
+  static deleteCompleted() {
+    const liList = document.querySelectorAll('.element');
+    liList.forEach((li) => {
+      const checkbox = li.querySelector('.checkbox');
+      if (checkbox.checked) {
+        li.remove();
+        const list = localStorage.getItem('list');
+        const parsedlist = JSON.parse(list);
+        const filteredList = parsedlist.filter((task) => {
+          const fullid = li.id;
+          const idString = fullid.split('-')[1];
+          const id = parseInt(idString, 10);
+          return task.id !== id;
+        });
+        localStorage.setItem('list', JSON.stringify(filteredList));
+        store.resetIds();
+      }
+    });
+  }
+
+  static clearFields() {
+    document.querySelector('#list-item').value = '';
+  }
+
+
+
+  static removeTask(id) {
+    const currentList = store.getList();
+    const filteredList = currentList.filter((task) => task.id !== id);
+    localStorage.setItem('list', JSON.stringify(filteredList));
+    store.resetIds();
+    const tasks = getUItasks();
+    tasks.forEach((task) => task.remove());
+
+    UI.displayList();
+  }
+}
+
+
+
+
+document.addEventListener('DOMContentLoaded', UI.displayList);
+const btnClear = document.querySelector('#btn-clear');
+btnClear.addEventListener('click', UI.deleteCompleted);
+document.querySelector('#new-todo-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const id = store.count;
+  const description = document.querySelector('#list-item').value;
+  const completed = false;
+  const task = new Task(id, description, completed);
+  UI.addTodoList(task);
+  store.addTask(task);
+  UI.clearFields();
+});

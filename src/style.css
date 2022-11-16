@@ -107,8 +107,27 @@ body {
   background-color: inherit;
 }
 
+.checked {
+  text-decoration: line-through;
+}
+
+.task-input:focus {
+  outline: none;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
 
 .dots {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.bin {
   height: 15px;
   width: 15px;
   cursor: pointer;
