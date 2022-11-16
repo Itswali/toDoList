@@ -5,5 +5,4 @@ export default class Task {
       this.completed = completed;
     }
 }
-window.alert("checking for connection task constructor");
   
