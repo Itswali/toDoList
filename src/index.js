@@ -2,7 +2,6 @@ import './style.css';
 import Store from './modules/Store.js';
 import Task from './modules/task.js';
 
-
 // Images for projects
 import Bin from './images/bin.png';
 import Dots from './images/dots.png';
@@ -22,7 +21,6 @@ enterContainer.innerHTML = `<img src=${Enter} class="enter-icon" />`;
 
 const dots = new Image();
 dots.src = Dots;
-
 
 const store = new Store();
 
@@ -72,9 +70,8 @@ function togLi(e) {
   image.setAttribute('class', 'bin');
 }
 
-// User Interface  
+// User Interface
 class UI {
-
   static displayList() {
     const list = store.getList();
     list.forEach((task) => UI.addTodoList(task));
@@ -131,7 +128,7 @@ class UI {
   static clearFields() {
     document.querySelector('#list-item').value = '';
   }
-  
+
   static removeTask(id) {
     const currentList = store.getList();
     const filteredList = currentList.filter((task) => task.id !== id);
