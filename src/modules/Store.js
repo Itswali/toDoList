@@ -1,9 +1,11 @@
 export default class Store {
+  // Counter to keep track of task index
   constructor() {
-    this.count = this.getlist().length;
+    this.count = this.getList().length;
   }
 
-  getlist() {
+  // Call to books from storage with get item
+  getList() {
     if (localStorage.getItem('list') === null) {
       this.list = [];
     } else {
@@ -19,7 +21,7 @@ export default class Store {
       completed: false,
     };
 
-    const list = this.getlist();
+    const list = this.getList();
     list.push(newTask);
     localStorage.setItem('list', JSON.stringify(list));
     this.count += 1;

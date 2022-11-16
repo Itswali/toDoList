@@ -34,9 +34,9 @@ function updateTask(e) {
   const value = e.target.id;
   const splitid = value.split('-');
   const idstring = splitid[2];
-  const id = parseInt(idstring, 10);
+  const id = parseInt(idstring, 36);
   const list = store.getList();
-  for (let i = 0; i < list.length; i += 1) {
+  for (let i = 0; i < list.length; i +=1 ) {
     const task = list[i];
     if (task.id === id) {
       list[i].description = text;
@@ -48,7 +48,7 @@ function updateTask(e) {
 const inputTasks = [];
 const buttonsDots = [];
 
-function togLi(e) {
+function toggleLi(e) {
   let li;
   const { target } = e;
   const className = e.target.classList[0];
@@ -81,7 +81,7 @@ class UI {
     const tasksList = document.getElementById('list-container');
 
     const taskContent = document.createElement('li');
-    taskContent.addEventListener('click', togLi);
+    taskContent.addEventListener('click', toggleLi);
     taskContent.innerHTML = `
         <input type="checkbox" id="checkbox" class="checkbox" />
         <div><input value="${task.description}" class="task-input" id="task-input-${task.id}"/></div>
@@ -125,7 +125,7 @@ class UI {
     });
   }
 
-  static clearFields() {
+   clearFields() {
     document.querySelector('#list-item').value = '';
   }
 
