@@ -36,7 +36,7 @@ function updateTask(e) {
   const idstring = splitid[2];
   const id = parseInt(idstring, 36);
   const list = store.getList();
-  for (let i = 0; i < list.length; i +=1 ) {
+  for (let i = 0; i < list.length; i += 1) {
     const task = list[i];
     if (task.id === id) {
       list[i].description = text;
@@ -125,7 +125,7 @@ class UI {
     });
   }
 
-   clearFields() {
+  static clearFields() {
     document.querySelector('#list-item').value = '';
   }
 
