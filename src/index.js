@@ -1,8 +1,11 @@
 // import _ from 'lodash';
 import './style.css';
 // Images for projects
-import './modules/work.js';
+import './modules/task.js';
+import './modules/Store.js'
 
+
+import Bin from './images/bin.png';
 import Dots from './images/dots.png';
 import Enter from './images/enter.png';
 import Refresh from './images/refresh.png';
@@ -50,86 +53,3 @@ const createList = (arr) => {
   }
 };
 createList(tasks);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-window.alert('WALI_CHECK');
-
-
-class LisTask {
-  constructor(text, id) {
-    this.id = id;
-    this.text = text;
-  }
-}
-
-const tasksArray = JSON.parse(localStorage.getItem('tasks')) || [];
-
-
-export default class theList {
-
-
-  // static showList = () => {
-  //   let listHtml = '';
-  //   for (let i = 0; i < tasksArray.length; i += 1) {
-  //     listHtml += `
-  //       <div class="book-row" id="book-${i}">
-  //         <p>${tasksArray[i].text}</p>
-  //         <button id="btn-book-${i}" data-index=${i} class="btn-remove">Remove</button> 
-  //         <hr>
-  //       </div>`;
-  //   }
-  //   listSec.innerHTML = listHtml;
-  // }
-
-
-  static createTask = () => {
-    const taskContent = `
-  <li class="element">
-      <input type="checkbox" id="checkbox" class="checkbox" />
-      <div>${tasksArray[i].text}</div>
-      <div class="dots-container"><img class="dots"src=${Dots} /></div>
-  </li>`;
-    // added task in html list
-    listContainer.innerHTML += taskContent;
-  };
-
-  static addTask = (e) => {
-    if (text.value.length > 0 ) {
-      e.preventDefault();
-      tasksArray.push(new LisTask(text.value));
-      text.value = '';
-      theList.createTask();
-      localStorage.setItem('tasks', JSON.stringify(tasksArray));
-    }
-  }
-
-  static removeTask = (e) => {
-    if (!e.target.matches('.dots')) return;
-    const { index } = e.target.dataset;
-    tasksArray.splice(index, 1);
-    localStorage.setItem('tasks', JSON.stringify(tasksArray));
-    theList.createTask();
-  }
-
-
-
-}
