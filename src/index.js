@@ -144,6 +144,7 @@ class UI {
     UI.displayList();
   }
 }
+export default UI.removeTask();
 
 document.addEventListener('DOMContentLoaded', UI.displayList);
 const btnClear = document.querySelector('#btn-clear');
@@ -159,3 +160,4 @@ document.querySelector('#new-todo-form').addEventListener('submit', (e) => {
   store.addTask(task);
   UI.clearFields();
 });
+

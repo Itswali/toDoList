@@ -1,13 +1,13 @@
-import 'jest-localstorage-mock';
-// import Store from '../modules/Store.js';
-var Store = require('../modules/Store');
-// var reverse = require('./reverse')
+import Store from '../modules/Store.js';
 import Task from '../modules/task.js';
 
+test('check adding of a task' , () => {
+    const task = new Task();
+      Store.addTask(task);
+      Store.getList();
+     expect(beta.length).toBe(0)
 
-test('add task to the list', () => {
-    const task = new Task(1, 'tasking', false);
-    Store.addTask(task);
-    const tasks = Store.getList();
-    expect(tasks.length).toBe(1);
-});
+    });
+
+
+

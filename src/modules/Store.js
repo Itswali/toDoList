@@ -1,4 +1,4 @@
-export default class Store {
+export class Store {
   // Counter to keep track of task index
   constructor() {
     this.count = this.getList().length;
@@ -65,4 +65,4 @@ export default class Store {
   }
 }
 
-module.exports = Store;
+
