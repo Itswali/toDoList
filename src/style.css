@@ -1,150 +1,162 @@
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
 }
 
-.list-wrapper {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
-.completed-list {
-  border-radius: 3px;
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.todo-div {
+  margin: auto;
+
+  /* background-color: aqua; */
+  width: 60%;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  align-items: center;
 }
 
-.list-container {
+.todo-heading {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.todo-item {
   display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-}
+  justify-content: space-between;
+  width: 500px;
 
-.title-container {
-  display: grid;
-  grid-template-columns: 15fr 1fr;
-  column-gap: 5px;
-  border: 1px solid gainsboro;
-  width: 430px;
-}
-
-.list-title {
-  height: 20px;
-  font-weight: 300;
-  font-size: 15px;
-  margin: 0;
-  padding: 15px;
-}
-
-.refresh-container {
-  display: flex;
-  justify-content: center;
+  /* background-color: yellow; */
+  border-bottom: 1px solid black;
   align-items: center;
+  margin-bottom: 5px;
 }
 
-.refresh-icon {
-  height: 14px;
-  width: 14px;
-  padding-right: 5px;
-}
-
-.input-container {
-  display: grid;
-  grid-template-columns: 15fr 1fr;
-  column-gap: 7px;
-  border: 1px solid rgb(204, 201, 201);
-  width: 430px;
-}
-
-.enter-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.enter-icon {
-  height: 14px;
-  width: 14px;
-  padding-right: 6px;
-  cursor: pointer;
-}
-
-.list-input {
-  border: none;
-  height: 20px;
-  padding: 15px;
-  font-size: 15px;
-  font-weight: 300;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style: italic;
-  color: #757575;
-}
-
-.checkbox {
-  cursor: pointer;
-}
-
-.element {
-  display: grid;
-  grid-template-columns: 1fr 15fr 1fr;
-  column-gap: 5px;
-  border: 0.5px solid rgb(212, 209, 209);
-  width: 405px;
-  height: 20px;
+.add-item {
+  width: 500px;
   list-style: none;
-  font-weight: 300;
-  padding: 15px 10px 15px 15px;
-}
 
-.task-input {
-  font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif;
-  font-weight: 300;
-  border: none;
-  width: 300px;
-  background-color: inherit;
-}
-
-.checked {
-  text-decoration: line-through;
-}
-
-.task-input:focus {
-  outline: none;
-}
-
-.dots-container {
-  display: flex;
-  justify-content: end;
+  /* background-color: yellow; */
+  border-bottom: 1px solid black;
   align-items: center;
+  margin-bottom: 5px;
 }
 
-.dots {
-  height: 15px;
-  width: 15px;
-  cursor: pointer;
+.todo-checkbox {
+  width: 25px;
+  height: 25px;
 }
 
-.bin {
-  height: 15px;
-  width: 15px;
-  cursor: pointer;
+.todo-input {
+  border: none;
+  font-size: large;
+  width: 50%;
+}
+
+.clear-div {
+  display: flex;
+  background-color: aliceblue;
+
+  /* width: 60%; */
+  align-self: center;
 }
 
 .clear-button {
-  width: 430px;
-  border: none;
-  height: 55px;
-  line-height: 30px;
-  font-weight: 200;
-  font-size: 15px;
-  cursor: pointer;
-  color: #aa2323;
+  width: 300px;
+  padding: 10px;
+  font-size: large;
 }
 
-.clear-button:hover {
-  text-decoration: line-through;
-  color: rgb(255, 10, 10);
+.hidden {
+  display: none;
+}
+
+.button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.button:hover {
+  color: red;
+}
+
+.add-button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.add-button:hover {
+  color: green;
 }
