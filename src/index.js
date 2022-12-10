@@ -71,6 +71,7 @@ function toggleLi(e) {
   image.setAttribute('class', 'bin');
 }
 
+
 class UI {
   static displayList() {
     const list = store.getList();
@@ -144,7 +145,7 @@ class UI {
     UI.displayList();
   }
 }
-export default UI.removeTask();
+export default UI;
 
 document.addEventListener('DOMContentLoaded', UI.displayList);
 const btnClear = document.querySelector('#btn-clear');
