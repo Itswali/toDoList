@@ -6,7 +6,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 const stylesHandler = 'style-loader';
 
 module.exports = {
-  // mode: 'development',
+  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: '[name].main.js',
@@ -28,8 +28,6 @@ module.exports = {
         type: 'asset',
       },
 
-      // Add your rules for custom modules here
-      // Learn more about loaders from https://webpack.js.org/loaders/
     ],
   },
   devServer: {
