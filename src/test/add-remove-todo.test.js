@@ -12,6 +12,6 @@ describe('Test remove functionality', () => {
   test('Remove todo task selected by the user', () => {
     const removeTask = new Todo('ensure project test work without errors!');
     removeTask.deleteTodo();
-    expect(removeTask.getAllTodos().length).toBe(0);
+    expect(Todo.getAllTodos().length).toBe(0);
   });
 });
