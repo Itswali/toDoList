@@ -196,15 +196,12 @@ You can deploy this project using:
 - Twitter: [@](https://twitter.com/brown_admirer)
 - LinkedIn: [@](https://www.linkedin.com/in/samuel-ntow-kyere-5036741b4/)
 
-<<<<<<< HEAD
-=======
 👤 **Reem Muhammed**
 
 - GitHub: [@github](https://github.com/ReemMohamedAbdelfatah)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/reem-abd-el-fatah-a07543116)
 
 
->>>>>>> refs/remotes/origin/addremovetest
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
