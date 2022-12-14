@@ -6,6 +6,7 @@ describe('Test add functionality', () => {
     expect(Todo.getAllTodos().length).toBe(1);
     todo.deleteTodo();
   });
+  });
 
 describe('Test remove functionality', () => {
   test('Remove todo task selected by the user', () => {
