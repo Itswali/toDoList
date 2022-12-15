@@ -32,3 +32,5 @@ describe('Test clear button ', () => {
     expect(todoContainer.childElementCount).toBe(0);
   });
 });
+
+}}
