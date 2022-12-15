@@ -6,7 +6,6 @@ describe('Make test for status of completed ', () => {
     const todo = new Todo('Make tests for this!!');
     todo.changeStatus(true);
     expect(todo.isCompleted).toBe(true);
-    // const todoNode = createTodoItem(todo);
   });
 
   test('Update todo items status in Html', () => {

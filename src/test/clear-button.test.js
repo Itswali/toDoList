@@ -1,7 +1,4 @@
-// jest.mock('../clearTodos')
-
 import Todo from '../TodoClass.js';
-// import { clearTodos } from '../todoCrud.js';
 import createTodoItem from '../CreateTodoItem.js';
 
 describe('Test clear button ', () => {
@@ -27,7 +24,6 @@ describe('Test clear button ', () => {
     });
 
     todoButton.addEventListener('click', clearTodos);
-    // console.log('completed', todo.isCompleted);
     todoButton.click();
     expect(todoContainer.childElementCount).toBe(0);
   });

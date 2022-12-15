@@ -6,7 +6,6 @@ describe('Test for edit functionality', () => {
     const todo = new Todo('Make tests for this!!');
     todo.updateTodo('Changes made');
     expect(todo.task).toBe('Changes made');
-    // const todoNode = createTodoItem(todo);
   });
   test('Edit todo item in html', () => {
     document.body.innerHTML = `
