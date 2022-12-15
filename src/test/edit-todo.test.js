@@ -22,5 +22,3 @@ describe('Test for edit functionality', () => {
     expect(inputField.value).toBe('New Stuff');
   });
 });
-
-}}
