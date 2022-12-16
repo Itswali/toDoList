@@ -1,39 +1,4 @@
-
-
-
 # 📗 Table of Contents
-
-- [📗 Table of Contents](#-table-of-contents)
-- [📗 Table of Contents](#-table-of-contents-1)
-- [📖 \[to-do-list\] ](#-to-do-list-)
-  - [🛠 Built With ](#-built-with-)
-    - [Tech Stack ](#tech-stack-)
-    - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
-  - [💻 Getting Started ](#-getting-started-)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-    - [Install](#install)
-    - [Usage](#usage)
-    - [Run tests](#run-tests)
-    - [Deployment](#deployment)
-  - [👥 Authors ](#-authors-)
-    - [Deployment](#deployment-1)
-  - [👥 Authors ](#-authors--1)
-  - [🔭 Future Features ](#-future-features-)
-  - [🤝 Contributing ](#-contributing-)
-  - [Live Link:](#live-link)
-  - [Show your support](#show-your-support)
-  - [⭐️ Show your support ](#️-show-your-support-)
-  - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [❓ FAQ ](#-faq-)
-  - [📝 License ](#-license-)
-
-
-
-
-# 📗 Table of Contents
-
 - [📗 Table of Contents](#-table-of-contents)
 - [📗 Table of Contents](#-table-of-contents-1)
 - [📖 \[to-do-list\] ](#-to-do-list-)
@@ -120,7 +85,11 @@
 
 
 
+
+- [Live Demo Link](https://Itswali.github.io/toDoList/dist)
+
 - [Live Demo Link](https://Itswali.github.io/toDoList/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -196,15 +165,12 @@ You can deploy this project using:
 - Twitter: [@](https://twitter.com/brown_admirer)
 - LinkedIn: [@](https://www.linkedin.com/in/samuel-ntow-kyere-5036741b4/)
 
-<<<<<<< HEAD
-=======
 👤 **Reem Muhammed**
 
 - GitHub: [@github](https://github.com/ReemMohamedAbdelfatah)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/reem-abd-el-fatah-a07543116)
 
 
->>>>>>> refs/remotes/origin/addremovetest
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -277,7 +243,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
