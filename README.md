@@ -85,7 +85,11 @@
 
 
 
+
 - [Live Demo Link](https://Itswali.github.io/toDoList/dist)
+
+- [Live Demo Link](https://Itswali.github.io/toDoList/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
