@@ -1,4 +1,4 @@
-class Todo {
+export default class Todo {
     static todoArray =[]
 
     static storageUpdater;
@@ -79,5 +79,3 @@ class Todo {
       }
     }
 }
-
-export default Todo;

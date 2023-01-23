@@ -37,7 +37,7 @@ const addAllEventListeners = () => {
     }
   });
 
-  // button for adding a ew Todo to the todo list
+  // button for adding a new Todo to the todo list
   addButton.addEventListener('click', (e) => {
     if (newTodoInput.value !== '') {
       e.preventDefault();

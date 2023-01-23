@@ -43,10 +43,8 @@ const createTodoItem = (todo) => {
   const deleteButton = document.createElement('button');
   deleteButton.classList.add('button');
 
-  // const menuIcon = document.createElement('i');
   const deleteIcon = document.createElement('i');
   deleteIcon.classList.add('fa-solid', 'fa-trash');
-  // menuIcon.classList.add('fa-solid', 'fa-ellipsis-vertical');
 
   deleteButton.appendChild(deleteIcon);
 
