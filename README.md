@@ -154,15 +154,15 @@ You can deploy this project using:
 
 👤 **Wali Muhammad**
 
-- GitHub: [@](https://github.com/Itswali)
-- Twitter: [@](https://twitter.com/WaliMuh94818599)
-- LinkedIn: [@](https://www.linkedin.com/in/wali-muhammad-666040244/)
+- GitHub: [@Wali-Muhammad](https://github.com/Itswali)
+- Twitter: [@Wali-Muhammad](https://twitter.com/WaliMuh94818599)
+- LinkedIn: [@Wali-Muhammad](https://www.linkedin.com/in/wali-muhammad-666040244/)
   
   👤 **Samuel Kyere**
 
-- GitHub: [@](https://github.com/admirerbrown)
-- Twitter: [@](https://twitter.com/brown_admirer)
-- LinkedIn: [@](https://www.linkedin.com/in/samuel-ntow-kyere-5036741b4/)
+- GitHub: [@Samual](https://github.com/admirerbrown)
+- Twitter: [@Samuel](https://twitter.com/brown_admirer)
+- LinkedIn: [@Samuel](https://www.linkedin.com/in/samuel-ntow-kyere-5036741b4/)
 
 👤 **Reem Muhammed**
 
@@ -228,13 +228,13 @@ Feel free to check the [issues page](../../issues/).
 
 
 
-- **[Question_1]**
+- **How to install all the packages to view the page online**
 
-  - [Answer_1]
+  - Just type the command npm install it will install all the required packages.
 
-- **[Question_2]**
+- **How to view the page on browser**
 
-  - [Answer_2]
+  - Type the command -npm start it will show the page on browser
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
