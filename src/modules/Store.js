@@ -4,7 +4,6 @@ export default class Store {
     this.count = this.getList().length;
   }
 
-  // Call to books from storage with get item
   getList() {
     if (localStorage.getItem('list') === null) {
       this.list = [];
