@@ -4,7 +4,7 @@ This is a To Do List app that have the functionality to add, remove, and mark as
 
 ## Live demo
 
-[demo here](https://abdessittir.github.io/To-Do-List/dist/)
+[demo here](https://Itswali.github.io/toDoList/dist)
 
 ## Buit with
 * HTML/CSS
